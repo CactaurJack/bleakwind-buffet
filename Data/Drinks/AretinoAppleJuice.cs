@@ -5,16 +5,16 @@ using BleakwindBuffet.Data.Enums;
 
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class MarkarthMilk
+    public class AretinoAppleJuice
     {
         public Size Size { get; set; } = Size.Small;
         public uint Calories
         {
             get
             {
-                if (Size == Size.Small) return 56;
-                if (Size == Size.Medium) return 72;
-                if (Size == Size.Large) return 93;
+                if (Size == Size.Small) return 44;
+                if (Size == Size.Medium) return 88;
+                if (Size == Size.Large) return 132;
                 throw new NotImplementedException($"Unknown size of {Size}");
             }
         }
@@ -23,9 +23,9 @@ namespace BleakwindBuffet.Data.Drinks
         {
             get
             {
-                if (Size == Size.Small) return 1.05;
-                if (Size == Size.Medium) return 1.11;
-                if (Size == Size.Large) return 1.22;
+                if (Size == Size.Small) return 0.62;
+                if (Size == Size.Medium) return 0.87;
+                if (Size == Size.Large) return 1.01;
                 throw new NotImplementedException($"Unknown size of {Size}");
             }
         }
@@ -44,7 +44,9 @@ namespace BleakwindBuffet.Data.Drinks
 
         public override string ToString()
         {
-            return Size + " Markarth Milk";
+            return Size + " Aretino Apple Juice";
+            
         }
+        
     }
 }
